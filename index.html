@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111827" />
+  <title>美辰 Beauty AI｜PWA Preview</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #111827;
+      --soft: #f3f4f6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 18px 42px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      border-radius: 28px;
+      padding: 30px 22px;
+      box-shadow: 0 18px 40px rgba(17,24,39,.18);
+    }
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      font-size: 13px;
+      letter-spacing: .02em;
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: 34px;
+      line-height: 1.08;
+    }
+    .hero p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      line-height: 1.65;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .card p, .card li {
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+    .card ul { margin: 8px 0 0; padding-left: 18px; }
+    .full { grid-column: 1 / -1; }
+    .notice {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: var(--soft);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 22px;
+    }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">Public Preview · Sanitized Demo</div>
+      <h1>美辰 Beauty AI</h1>
+      <p>面向美发门店与发型师的染发诊断、配方推荐、客户管理与作品沉淀 PWA 公开预览页。</p>
+    </section>
+
+    <section class="grid" aria-label="preview modules">
+      <div class="card">
+        <h2>客户档案</h2>
+        <p>演示客户信息录入、会员/次卡状态、消费记录与权限区分。公开版仅使用模拟数据。</p>
+      </div>
+      <div class="card">
+        <h2>相机 AI</h2>
+        <p>演示拍照诊断入口与多角度采集流程。公开版不保存真实照片，不上传真实客户素材。</p>
+      </div>
+      <div class="card">
+        <h2>推荐方案</h2>
+        <p>演示易染、可尝试、需漂浅的方案分层。公开版不暴露完整商业规则与内部配方库。</p>
+      </div>
+      <div class="card">
+        <h2>作品库</h2>
+        <p>演示作品沉淀、案例复盘与风格分类。公开版仅展示占位内容和结构化说明。</p>
+      </div>
+      <div class="card full">
+        <h2>公开预览边界</h2>
+        <ul>
+          <li>不包含真实客户姓名、电话、会员金额或门店数据。</li>
+          <li>不包含密钥、令牌、账号、自动化日志或私有项目记录。</li>
+          <li>不包含原始品牌色板 PDF、教学视频或未授权素材。</li>
+          <li>正式功能以私有主仓库版本为准。</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="notice">
+      This public page is a sanitized preview for demonstration and GitHub Pages deployment only. The private development repository remains separate.
+    </div>
+
+    <footer class="footer">© Meichen Beauty AI · Public Preview</footer>
+  </main>
+</body>
+</html>
