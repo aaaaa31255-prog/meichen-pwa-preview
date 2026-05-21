@@ -22,7 +22,16 @@
     "local_customer_storage": false,
     "external_network_dependencies": false
   },
-  "status": "deployed",
+  "status": "mobile_acceptance_passed",
   "version": "public-preview-v2",
-  "deployment_commit": "8a2dccc9db6ba5bdf8dc7c9dc0b14704864b8f21"
+  "deployment_commit": "8a2dccc9db6ba5bdf8dc7c9dc0b14704864b8f21",
+  "latest_fix_commit": "9c24f5056743e0003efc1006c5894422e1827603",
+  "accepted_by_user": true,
+  "accepted_scope": [
+    "iphone_safari_layout",
+    "top_safe_area",
+    "bottom_navigation_8_tabs",
+    "public_sanitized_demo_boundary"
+  ],
+  "next_stage": "prepare_private_repo_sync_instruction"
 }
