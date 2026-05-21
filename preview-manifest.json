@@ -20,15 +20,17 @@
     "full_private_business_rules": false,
     "real_camera_access": false,
     "local_customer_storage": false,
-    "external_network_dependencies": false
+    "external_network_dependencies": false,
+    "login_is_demo_only": true
   },
-  "status": "desktop_preview_v3_deployed_waiting_user_acceptance",
-  "version": "public-preview-v3-desktop",
-  "deployment_commit": "47b0f08f32c8c565167b54a8da14aff9232214d2",
+  "status": "desktop_preview_v3_login_deployed_waiting_user_acceptance",
+  "version": "public-preview-v3-desktop-login",
+  "deployment_commit": "e68e0da27e0d5b7476cb08495bfe4fd1e774337a",
   "design_direction": [
+    "login_entry_with_meichen_logo",
     "desktop_first_salon_dashboard",
     "mobile_responsive_preview",
-    "appointment_customer_pos_inventory_marketing_reports_reference_structure",
+    "appointment_customer_inventory_marketing_reports_reference_structure",
     "meichen_ai_diagnosis_formula_inventory_decision_workflow"
   ],
   "accepted_by_user": false,
