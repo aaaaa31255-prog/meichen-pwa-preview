@@ -23,11 +23,12 @@
     "external_network_dependencies": false,
     "login_is_demo_only": true
   },
-  "status": "desktop_preview_v3_login_deployed_waiting_user_acceptance",
-  "version": "public-preview-v3-desktop-login",
-  "deployment_commit": "e68e0da27e0d5b7476cb08495bfe4fd1e774337a",
+  "status": "desktop_preview_v3_requested_logo_deployed_waiting_user_acceptance",
+  "version": "public-preview-v3-desktop-login-mc-logo",
+  "deployment_commit": "ddd96019af16e7d6d0433298e7d0a86c7fa56ee0",
   "design_direction": [
-    "login_entry_with_meichen_logo",
+    "login_entry_with_requested_mc_logo",
+    "home_screen_gitHub_preview_test_target",
     "desktop_first_salon_dashboard",
     "mobile_responsive_preview",
     "appointment_customer_inventory_marketing_reports_reference_structure",
