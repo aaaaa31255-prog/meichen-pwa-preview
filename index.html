@@ -1,144 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111827" />
-  <title>美辰 Beauty AI｜PWA Preview</title>
-  <style>
-    :root {
-      --bg: #f7f7f8;
-      --card: #ffffff;
-      --text: #111827;
-      --muted: #6b7280;
-      --line: #e5e7eb;
-      --accent: #111827;
-      --soft: #f3f4f6;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-    .wrap {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 28px 18px 42px;
-    }
-    .hero {
-      background: linear-gradient(135deg, #111827, #374151);
-      color: white;
-      border-radius: 28px;
-      padding: 30px 22px;
-      box-shadow: 0 18px 40px rgba(17,24,39,.18);
-    }
-    .badge {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      padding: 7px 11px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.12);
-      font-size: 13px;
-      letter-spacing: .02em;
-    }
-    h1 {
-      margin: 18px 0 8px;
-      font-size: 34px;
-      line-height: 1.08;
-    }
-    .hero p {
-      margin: 0;
-      color: rgba(255,255,255,.78);
-      line-height: 1.65;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 16px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 18px;
-    }
-    .card h2 {
-      margin: 0 0 8px;
-      font-size: 18px;
-    }
-    .card p, .card li {
-      color: var(--muted);
-      line-height: 1.65;
-      font-size: 14px;
-    }
-    .card ul { margin: 8px 0 0; padding-left: 18px; }
-    .full { grid-column: 1 / -1; }
-    .notice {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border-radius: 18px;
-      background: var(--soft);
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.6;
-    }
-    .footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 12px;
-      margin-top: 22px;
-    }
-    @media (max-width: 640px) {
-      .grid { grid-template-columns: 1fr; }
-      h1 { font-size: 30px; }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="美辰 Preview" />
+<meta name="theme-color" content="#111827" />
+<title>美辰 Beauty AI · Public Preview v2</title>
+<style>
+:root{--bg:#f7f4ef;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e7ded3;--dark:#111827;--brown:#7b4a1e;--gold:#c8851a;--green:#16a34a;--orange:#ea580c;--red:#dc2626;--blue:#2563eb;--nav:76px}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif;-webkit-text-size-adjust:100%}button{font:inherit}.app{max-width:520px;margin:0 auto;min-height:100vh;background:linear-gradient(#fbfaf8,#f7f4ef);position:relative}.scroll{height:100vh;overflow:auto;padding:16px 16px calc(var(--nav) + 24px)}.hero{border-radius:28px;padding:26px 20px;color:#fff;background:linear-gradient(135deg,#111827,#273244 58%,#6b4a25);box-shadow:0 18px 42px rgba(17,24,39,.22);margin-bottom:16px}.pill{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 12px;background:rgba(255,255,255,.13);font-size:12px;letter-spacing:.02em}.hero h1{font-size:34px;line-height:1.08;margin:18px 0 10px}.hero p{margin:0;color:rgba(255,255,255,.8);font-size:15px;line-height:1.65}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin:12px 0;box-shadow:0 8px 22px rgba(40,28,18,.05)}.card h2{font-size:19px;margin:0 0 8px}.card h3{font-size:16px;margin:0 0 8px}.card p,.card li{font-size:14px;line-height:1.65;color:var(--muted)}.card ul{margin:8px 0 0;padding-left:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{border:1px solid var(--line);border-radius:18px;background:#fff;padding:13px}.mini b{display:block;font-size:14px;margin-bottom:5px}.mini span{font-size:12px;line-height:1.45;color:var(--muted)}.tag{display:inline-flex;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:700;background:#f3f4f6;color:#374151;margin:4px 5px 4px 0}.tag.green{background:#dcfce7;color:#166534}.tag.orange{background:#ffedd5;color:#9a3412}.tag.red{background:#fee2e2;color:#991b1b}.notice{border:1px solid #f2c57e;background:#fff8eb;color:#7c4a03;border-radius:18px;padding:13px 14px;font-size:13px;line-height:1.65}.section{display:none;animation:fade .16s ease-out}.section.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.brand{font-weight:900;font-size:18px}.version{font-size:12px;color:var(--muted)}.nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(520px,100%);height:var(--nav);padding:7px 6px calc(env(safe-area-inset-bottom) + 7px);background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(8,1fr);gap:2px}.nav button{border:0;background:transparent;border-radius:14px;color:#7a7f8b;padding:4px 1px;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0}.nav button.active{color:var(--brown);background:#f5ede4}.nav small{font-size:9px;white-space:nowrap}.ico{width:22px;height:22px;position:relative;display:inline-block}.ico.home:before{content:"";position:absolute;left:3px;top:8px;width:16px;height:11px;border:2px solid currentColor;border-top:0;border-radius:2px}.ico.home:after{content:"";position:absolute;left:4px;top:3px;width:14px;height:14px;border-left:2px solid currentColor;border-top:2px solid currentColor;transform:rotate(45deg)}.ico.user:before{content:"";position:absolute;left:7px;top:3px;width:8px;height:8px;border:2px solid currentColor;border-radius:50%}.ico.user:after{content:"";position:absolute;left:4px;top:13px;width:14px;height:7px;border:2px solid currentColor;border-radius:10px 10px 2px 2px}.ico.cam:before{content:"";position:absolute;left:2px;top:6px;width:18px;height:13px;border:2px solid currentColor;border-radius:4px}.ico.cam:after{content:"+";position:absolute;left:7px;top:4px;font-weight:800;font-size:15px}.ico.check:before{content:"";position:absolute;left:4px;top:3px;width:14px;height:16px;border:2px solid currentColor;border-radius:3px}.ico.check:after{content:"";position:absolute;left:7px;top:9px;width:8px;height:4px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg)}.ico.rec:before{content:"";position:absolute;left:3px;top:3px;width:16px;height:16px;border:2px solid currentColor;border-radius:50%}.ico.rec:after{content:"";position:absolute;left:10px;top:6px;width:2px;height:10px;background:currentColor;box-shadow:-4px 4px 0 currentColor,4px 4px 0 currentColor}.ico.chart:before{content:"";position:absolute;left:4px;top:4px;width:3px;height:14px;background:currentColor;box-shadow:6px 5px 0 currentColor,12px -2px 0 currentColor}.ico.chart:after{content:"";position:absolute;left:2px;bottom:3px;width:18px;border-bottom:2px solid currentColor}.ico.grid:before{content:"";position:absolute;left:3px;top:3px;width:6px;height:6px;border:2px solid currentColor;box-shadow:10px 0 0 -2px currentColor,0 10px 0 -2px currentColor,10px 10px 0 -2px currentColor}.ico.phone:before{content:"";position:absolute;left:6px;top:2px;width:10px;height:18px;border:2px solid currentColor;border-radius:3px}.ico.phone:after{content:"";position:absolute;left:10px;bottom:4px;width:2px;height:2px;background:currentColor;border-radius:50%}.profile{display:flex;gap:12px;align-items:center}.avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#e8d4c0,#f9f0e2);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--brown)}.steps{display:grid;gap:9px}.step{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px}.num{width:28px;height:28px;border-radius:50%;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-weight:800;color:#374151}.slider{margin:15px 0}.slider label{display:flex;justify-content:space-between;font-size:13px;color:#374151;margin-bottom:7px}.bar{height:10px;border-radius:999px;background:linear-gradient(90deg,#111827,#7b4a1e,#c8851a,#f5d987);position:relative;overflow:hidden}.bar i{display:block;height:100%;background:rgba(255,255,255,.55)}.bucket{border-radius:18px;padding:14px;margin:10px 0;border:1px solid var(--line)}.bucket.easy{background:#f0fdf4}.bucket.try{background:#fff7ed}.bucket.light{background:#fef2f2}.risk{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:11px 0}.risk:last-child{border-bottom:0}.placeholder{height:96px;border-radius:16px;background:linear-gradient(135deg,#efe7dc,#ffffff);border:1px dashed #d7c4af;display:flex;align-items:center;justify-content:center;color:#9a7d65;font-size:13px}.client-card{text-align:center;background:linear-gradient(180deg,#fff,#fbf7f1)}.client-result{font-size:28px;font-weight:900;margin:8px 0;color:var(--brown)}@media(max-width:380px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr}.nav small{font-size:8px}.scroll{padding-left:12px;padding-right:12px}}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <div class="badge">Public Preview · Sanitized Demo</div>
-      <h1>美辰 Beauty AI</h1>
-      <p>面向美发门店与发型师的染发诊断、配方推荐、客户管理与作品沉淀 PWA 公开预览页。</p>
+<div class="app">
+  <div id="scroll" class="scroll">
+    <div class="topbar"><div class="brand">美辰 Beauty AI</div><div class="version">Public Preview v2</div></div>
+
+    <section id="sec-home" class="section active">
+      <div class="hero"><div class="pill">Public Preview · Sanitized Demo</div><h1>美辰 Beauty AI</h1><p>面向美发门店与发型师的染发诊断、配方推荐、客户管理与作品沉淀 PWA 公开预览版。</p></div>
+      <div class="notice">公开版不包含真实客户数据、不开放完整配方库、不上传照片、不包含原始品牌色板或内部项目记录。</div>
+      <div class="card"><h2>模块总览</h2><div class="grid"><div class="mini"><b>客户档案</b><span>模拟会员、次卡和权限流程。</span></div><div class="mini"><b>相机 AI</b><span>只演示多角度采集流程。</span></div><div class="mini"><b>推荐方案</b><span>展示方案分层，不暴露比例。</span></div><div class="mini"><b>作品库</b><span>CSS 占位，不含真实照片。</span></div></div></div>
+      <div class="card"><h2>安全边界</h2><ul><li>无真实客户姓名、电话、会员金额或门店流水。</li><li>无密钥、令牌、账号、自动化日志或 project_hub 私有记录。</li><li>无原始品牌色板 PDF、教学视频或未授权素材。</li><li>正式功能以私有主仓库版本为准。</li></ul></div>
     </section>
 
-    <section class="grid" aria-label="preview modules">
-      <div class="card">
-        <h2>客户档案</h2>
-        <p>演示客户信息录入、会员/次卡状态、消费记录与权限区分。公开版仅使用模拟数据。</p>
-      </div>
-      <div class="card">
-        <h2>相机 AI</h2>
-        <p>演示拍照诊断入口与多角度采集流程。公开版不保存真实照片，不上传真实客户素材。</p>
-      </div>
-      <div class="card">
-        <h2>推荐方案</h2>
-        <p>演示易染、可尝试、需漂浅的方案分层。公开版不暴露完整商业规则与内部配方库。</p>
-      </div>
-      <div class="card">
-        <h2>作品库</h2>
-        <p>演示作品沉淀、案例复盘与风格分类。公开版仅展示占位内容和结构化说明。</p>
-      </div>
-      <div class="card full">
-        <h2>公开预览边界</h2>
-        <ul>
-          <li>不包含真实客户姓名、电话、会员金额或门店数据。</li>
-          <li>不包含密钥、令牌、账号、自动化日志或私有项目记录。</li>
-          <li>不包含原始品牌色板 PDF、教学视频或未授权素材。</li>
-          <li>正式功能以私有主仓库版本为准。</li>
-        </ul>
-      </div>
+    <section id="sec-customer" class="section">
+      <div class="card"><h2>客户 / Customer</h2><div class="profile"><div class="avatar">A</div><div><b>Demo Client A</b><p>Phone: hidden · Membership: mock only</p></div></div></div>
+      <div class="card"><h3>模拟客户状态</h3><span class="tag green">会员：演示</span><span class="tag">次卡：Mock 6/10</span><span class="tag">最近项目：染发咨询</span><p>公开预览不保存真实客户记录，不写入本地存储。</p></div>
     </section>
 
-    <div class="notice">
-      This public page is a sanitized preview for demonstration and GitHub Pages deployment only. The private development repository remains separate.
-    </div>
+    <section id="sec-camera" class="section">
+      <div class="card"><h2>相机AI / Camera AI</h2><p>公开版只演示流程，不调用真实相机，不保存或上传照片。</p><div class="steps"><div class="step"><div class="num">1</div>Front photo · 正面</div><div class="step"><div class="num">2</div>Side photo · 侧面</div><div class="step"><div class="num">3</div>Back photo · 后方</div><div class="step"><div class="num">4</div>Lighting check · 光线检查</div></div></div>
+      <div class="notice">Demo only - camera disabled in public preview.</div>
+    </section>
 
-    <footer class="footer">© Meichen Beauty AI · Public Preview</footer>
-  </main>
+    <section id="sec-manual" class="section">
+      <div class="card"><h2>人工判断 / Manual Diagnosis</h2><p>以下为静态演示值，仅说明诊断字段结构。</p><div class="slider"><label><span>Base level 底色</span><b>6</b></label><div class="bar"><i style="width:40%"></i></div></div><div class="slider"><label><span>Damage level 受损</span><b>2/5</b></label><div class="bar"><i style="width:60%"></i></div></div><div class="slider"><label><span>Grey hair 白发</span><b>20%</b></label><div class="bar"><i style="width:80%"></i></div></div><div class="slider"><label><span>Warm / Cool 冷暖</span><b>Neutral</b></label><div class="bar"><i style="width:50%"></i></div></div></div>
+    </section>
+
+    <section id="sec-recommend" class="section">
+      <div class="card"><h2>推荐方案 / Recommendation</h2><div class="bucket easy"><h3>易染 / Easy</h3><p>Warm beige brown direction · 暖米棕方向</p></div><div class="bucket try"><h3>可尝试 / Try</h3><p>Cool milk tea direction · 冷奶茶方向</p></div><div class="bucket light"><h3>需漂浅 / Lighten First</h3><p>Pearl beige direction · 珍珠米 beige 方向</p></div><p><b>Exact formula is hidden in the private production system.</b></p></div>
+    </section>
+
+    <section id="sec-analysis" class="section">
+      <div class="card"><h2>分析 / Analysis</h2><div class="risk"><span>Base level risk</span><span class="tag orange">Medium</span></div><div class="risk"><span>Color correction risk</span><span class="tag">Demo</span></div><div class="risk"><span>Bleaching risk</span><span class="tag red">Depends</span></div><div class="risk"><span>Inventory dependency</span><span class="tag">Private data hidden</span></div></div>
+    </section>
+
+    <section id="sec-works" class="section">
+      <div class="card"><h2>作品库 / Works</h2><p>公开版不包含真实沙龙照片。</p><div class="grid"><div class="placeholder">Work placeholder</div><div class="placeholder">Case placeholder</div></div></div>
+    </section>
+
+    <section id="sec-client" class="section">
+      <div class="card client-card"><h2>客户版 / Client View</h2><p>给客户看的简化结果页示意，不含预约、支付或表单。</p><div class="client-result">Soft Brown Direction</div><span class="tag green">低维护</span><span class="tag orange">需现场确认</span></div>
+      <div class="notice">This public preview does not collect, store, or transmit real customer data. Production privacy and platform compliance rules are handled in the private repository and release packages.</div>
+    </section>
+  </div>
+
+  <nav class="nav" aria-label="bottom navigation">
+    <button class="active" data-sec="home"><i class="ico home"></i><small>首页</small></button>
+    <button data-sec="customer"><i class="ico user"></i><small>客户</small></button>
+    <button data-sec="camera"><i class="ico cam"></i><small>相机AI</small></button>
+    <button data-sec="manual"><i class="ico check"></i><small>人工判断</small></button>
+    <button data-sec="recommend"><i class="ico rec"></i><small>推荐方案</small></button>
+    <button data-sec="analysis"><i class="ico chart"></i><small>分析</small></button>
+    <button data-sec="works"><i class="ico grid"></i><small>作品库</small></button>
+    <button data-sec="client"><i class="ico phone"></i><small>客户版</small></button>
+  </nav>
+</div>
+<script>
+(function(){
+  function switchTo(name){
+    var sections=document.querySelectorAll('.section');
+    for(var i=0;i<sections.length;i++){sections[i].classList.remove('active');}
+    var target=document.getElementById('sec-'+name);
+    if(target){target.classList.add('active');}
+    var buttons=document.querySelectorAll('.nav button');
+    for(var j=0;j<buttons.length;j++){buttons[j].classList.toggle('active',buttons[j].getAttribute('data-sec')===name);}
+    var sc=document.getElementById('scroll');
+    if(sc){sc.scrollTop=0;}
+  }
+  document.querySelector('.nav').addEventListener('click',function(e){
+    var btn=e.target.closest('button[data-sec]');
+    if(btn){switchTo(btn.getAttribute('data-sec'));}
+  });
+})();
+</script>
 </body>
 </html>
