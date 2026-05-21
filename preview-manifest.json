@@ -22,16 +22,15 @@
     "local_customer_storage": false,
     "external_network_dependencies": false
   },
-  "status": "mobile_acceptance_passed",
-  "version": "public-preview-v2",
-  "deployment_commit": "8a2dccc9db6ba5bdf8dc7c9dc0b14704864b8f21",
-  "latest_fix_commit": "9c24f5056743e0003efc1006c5894422e1827603",
-  "accepted_by_user": true,
-  "accepted_scope": [
-    "iphone_safari_layout",
-    "top_safe_area",
-    "bottom_navigation_8_tabs",
-    "public_sanitized_demo_boundary"
+  "status": "desktop_preview_v3_deployed_waiting_user_acceptance",
+  "version": "public-preview-v3-desktop",
+  "deployment_commit": "47b0f08f32c8c565167b54a8da14aff9232214d2",
+  "design_direction": [
+    "desktop_first_salon_dashboard",
+    "mobile_responsive_preview",
+    "appointment_customer_pos_inventory_marketing_reports_reference_structure",
+    "meichen_ai_diagnosis_formula_inventory_decision_workflow"
   ],
-  "next_stage": "prepare_private_repo_sync_instruction"
+  "accepted_by_user": false,
+  "next_stage": "user_mobile_or_desktop_preview_acceptance"
 }
