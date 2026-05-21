@@ -17,8 +17,12 @@
     "original_color_chart_pdfs": false,
     "original_training_videos": false,
     "private_project_hub_records": false,
-    "full_private_business_rules": false
+    "full_private_business_rules": false,
+    "real_camera_access": false,
+    "local_customer_storage": false,
+    "external_network_dependencies": false
   },
   "status": "deployed",
-  "version": "public-preview-v1"
+  "version": "public-preview-v2",
+  "deployment_commit": "8a2dccc9db6ba5bdf8dc7c9dc0b14704864b8f21"
 }
