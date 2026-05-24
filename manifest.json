@@ -1,15 +1,16 @@
 {
-  "name": "美辰 GitHub版",
+  "name": "美辰 Beauty AI",
   "short_name": "美辰",
-  "start_url": "./?v=mc-exact-img-v1",
+  "start_url": "./?v=wb16-2",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-  "description": "Meichen Beauty AI public sanitized preview.",
+  "orientation": "portrait",
+  "background_color": "#f8f0e8",
+  "theme_color": "#7b4a1e",
+  "description": "美辰 WB16.2 Safari PWA preview. Album-first photo import test.",
   "icons": [
     {
-      "src": "apple-touch-icon.png?v=mc-exact-img-v1",
+      "src": "./apple-touch-icon.png?v=wb16-2",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
