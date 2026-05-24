@@ -1,32 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="美辰 GitHub版">
-<meta name="application-name" content="美辰 GitHub版">
-<meta name="theme-color" content="#ffffff">
-<link rel="manifest" href="manifest.json?v=mc-clean-icon-v2">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=mc-clean-icon-v2">
-<link rel="icon" type="image/png" href="apple-touch-icon.png?v=mc-clean-icon-v2">
-<title>美辰 GitHub版</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="美辰">
+<meta name="application-name" content="美辰 Beauty AI">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#7b4a1e">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="manifest" href="./manifest.json?v=wb16-4-20260524-01">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png?v=wb16-4-20260524-01">
+<link rel="icon" type="image/png" href="./apple-touch-icon.png?v=wb16-4-20260524-01">
+<title>美辰 WB16.4 Safari 桌面测试</title>
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg,#f7f8fc,#eef1f7);color:#151922}.login{min-height:100vh;padding:max(54px,env(safe-area-inset-top)) 22px calc(104px + env(safe-area-inset-bottom));display:flex;justify-content:center}.panel{width:min(440px,100%);text-align:center;padding-top:84px}.logo{width:116px;height:116px;border-radius:30px;object-fit:cover;display:block;margin:0 auto;background:#fff;box-shadow:0 18px 46px rgba(20,25,35,.22)}.title{font-size:30px;font-weight:800;letter-spacing:-.5px;margin:24px 0 66px}.field{height:68px;border-radius:999px;background:#fff;margin:20px 0;display:flex;align-items:center;gap:16px;padding:0 22px;box-shadow:0 12px 34px rgba(20,25,35,.055)}.field .ico{width:28px;text-align:center;color:#aeb3bd;font-size:21px}.field input{border:0;outline:0;background:transparent;flex:1;min-width:0;font-size:20px;color:#333}.field input::placeholder{color:#c6cad3}.clear{font-size:26px;color:#aaa}.btn{width:100%;height:70px;border:0;border-radius:999px;background:#f56398;color:#fff;font-size:22px;margin:28px 0 14px;box-shadow:0 14px 30px rgba(245,99,152,.25)}.links{display:flex;justify-content:space-between;font-size:16px;color:#b4b9c4}.links .pink{color:#f56398}.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;height:calc(74px + env(safe-area-inset-bottom));padding:8px 6px calc(12px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.96);border-top:1px solid #e9edf4}.tabs button{border:0;background:transparent;border-radius:16px;font-size:13px;color:#777}.tabs button.active{background:#f3eade;color:#8a5627;font-weight:800}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:linear-gradient(160deg,#25150c,#7b4a1e 48%,#f8f0e8);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px}.card{width:min(430px,100%);border-radius:30px;background:rgba(255,255,255,.14);backdrop-filter:blur(18px);box-shadow:0 24px 70px rgba(0,0,0,.28);padding:28px;text-align:center;border:1px solid rgba(255,255,255,.22)}.logo{width:122px;height:122px;border-radius:30px;margin:0 auto 18px;display:grid;place-items:center;background:linear-gradient(135deg,#ff2d72,#ff7a18,#f8e71c,#19d45b,#1587ff,#7b2cff);box-shadow:0 18px 42px rgba(0,0,0,.28);position:relative;overflow:hidden}.logo:before{content:"";position:absolute;inset:20px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#111 0 38%,#fff 39% 72%,transparent 73%)}.logo b{position:relative;z-index:1;font-size:42px;letter-spacing:-1px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.35)}h1{font-size:30px;line-height:1.2;margin:10px 0 8px}.ver{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.22);font-size:13px;margin:8px 0 18px}.msg{line-height:1.7;font-size:16px;color:rgba(255,255,255,.9);margin:0 0 18px}.btn{display:block;width:100%;border:0;border-radius:18px;background:#fff;color:#7b4a1e;font-weight:900;font-size:18px;padding:16px;margin-top:14px;text-decoration:none}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.box{border-radius:18px;background:rgba(255,255,255,.16);padding:13px 10px;font-size:13px}.box b{display:block;font-size:18px;margin-bottom:3px}.foot{font-size:12px;color:rgba(255,255,255,.72);margin-top:18px;line-height:1.6}
 </style>
 </head>
 <body>
-<section class="login">
-  <div class="panel">
-    <img class="logo" src="apple-touch-icon.png?v=mc-clean-icon-v2" alt="美辰 MC 图标">
-    <div class="title">美辰 Beauty AI</div>
-    <div class="field"><span class="ico">▯</span><input inputmode="tel" placeholder="请输入注册手机号"></div>
-    <div class="field"><span class="ico">♙</span><input value="boss"><span class="clear">×</span></div>
-    <div class="field"><span class="ico">▣</span><input type="password" placeholder="请输入密码"><span class="clear">◦</span></div>
-    <button class="btn">登录</button>
-    <div class="links"><span>忘记密码?</span><span class="pink">商家注册</span></div>
-  </div>
-</section>
-<nav class="tabs"><button class="active">首页</button><button>客户</button><button>诊断</button><button>方案</button><button>库存</button></nav>
+<main class="card">
+  <div class="logo"><b>MC</b></div>
+  <h1>美辰 Beauty AI</h1>
+  <div class="ver">WB16.4 Safari 桌面测试入口</div>
+  <p class="msg">这个页面用于确认 iPhone Safari 可以添加到主屏幕。成功后，桌面会出现“美辰”入口；后续同一链接可继续更新。</p>
+  <a class="btn" href="./?v=wb16-4-20260524-01">刷新当前测试入口</a>
+  <div class="grid"><div class="box"><b>✓</b>HTTPS</div><div class="box"><b>✓</b>PWA Ready</div><div class="box"><b>✓</b>Safari</div><div class="box"><b>WB16.4</b>Test</div></div>
+  <div class="foot">添加方法：Safari 打开本页 → 分享按钮 → 添加到主屏幕 → 名称填“美辰”。如果旧图标残留，先删除旧桌面图标再重新添加。</div>
+</main>
+<script>
+(function(){
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./service-worker.js?v=wb16-4-20260524-01').catch(function(){});
+  }
+})();
+</script>
 </body>
 </html>
