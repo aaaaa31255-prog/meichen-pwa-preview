@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meichen-wb16-4-public-shell-20260524-05';
+const CACHE_NAME = 'meichen-wb16-4-public-shell-20260524-06';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -22,7 +22,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-store' })
       .then(response => {
         const clone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone)).catch(() => {});
