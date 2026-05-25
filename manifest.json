@@ -1,16 +1,16 @@
 {
   "name": "美辰 Beauty AI",
   "short_name": "美辰",
-  "start_url": "./?v=wb16-4-public-shell-20260524-05",
+  "start_url": "./?v=wb16-4-public-shell-20260524-06",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#111111",
   "theme_color": "#111111",
-  "description": "美辰 WB16.4 public desktop shell. Core system is kept private.",
+  "description": "美辰 WB17 public desktop shell. Core system is kept private.",
   "icons": [
     {
-      "src": "./apple-touch-icon.png?v=wb16-4-public-shell-20260524-05",
+      "src": "./apple-touch-icon.png?v=wb16-4-public-shell-20260524-06",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
