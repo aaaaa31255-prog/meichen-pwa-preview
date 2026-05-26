@@ -1,0 +1,19 @@
+{
+  "version": "WB17.6 RC8a Safari Home Screen Test Shell 20260526",
+  "type": "PUBLIC_SHELL_ONLY",
+  "ok": true,
+  "privateCoreIncluded": false,
+  "checks": {
+    "noPrivateFormulaEngine": "PASS",
+    "noFullShadeDatabase": "PASS",
+    "noCaseLibraryInternals": "PASS",
+    "noCustomerMemberData": "PASS",
+    "noInventoryLogic": "PASS",
+    "noPrivateBusinessRules": "PASS",
+    "manifestExists": "PASS",
+    "serviceWorkerExists": "PASS",
+    "safariHomeScreenGuideExists": "PASS",
+    "aiLabScaffoldLabelsOnly": "PASS"
+  },
+  "notes": "Public GitHub Pages shell only. Full Meichen core remains private. Not a formal App Store or Mini Program release."
+}
