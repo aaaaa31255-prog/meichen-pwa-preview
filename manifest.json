@@ -1,16 +1,16 @@
 {
-  "name": "美辰 Beauty AI",
-  "short_name": "美辰",
-  "start_url": "./?v=wb17-public-shell-20260524-07",
+  "name": "Meichen Beauty AI",
+  "short_name": "Meichen",
+  "description": "Meichen Beauty AI public shell preview. Private formula core is not included.",
+  "start_url": "./index.html?v=rc8a-shell-20260526",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#111111",
   "theme_color": "#111111",
-  "description": "美辰 WB17 public desktop shell. Core system is kept private.",
   "icons": [
     {
-      "src": "./apple-touch-icon.png?v=wb17-public-shell-20260524-07",
+      "src": "./apple-touch-icon.png?v=rc8a-shell-20260526",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
