@@ -3,52 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="美辰">
 <meta name="application-name" content="美辰 Beauty AI">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#111111">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<link rel="manifest" href="./manifest.json?v=wb17-public-shell-20260524-07">
-<link rel="apple-touch-icon" href="./apple-touch-icon.png?v=wb17-public-shell-20260524-07">
-<link rel="icon" type="image/png" href="./apple-touch-icon.png?v=wb17-public-shell-20260524-07">
-<title>美辰 Beauty AI</title>
+<link rel="manifest" href="./manifest.json?v=rc8a-shell-20260526">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png?v=rc8a-shell-20260526">
+<link rel="icon" type="image/png" href="./apple-touch-icon.png?v=rc8a-shell-20260526">
+<title>美辰 Beauty AI · RC8a Public Shell</title>
 <style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:linear-gradient(160deg,#111,#3a2417 48%,#f4e8dc);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px}.card{width:min(430px,100%);border-radius:30px;background:rgba(255,255,255,.13);backdrop-filter:blur(18px);box-shadow:0 24px 70px rgba(0,0,0,.28);padding:28px;text-align:center;border:1px solid rgba(255,255,255,.22)}.logo{width:118px;height:118px;border-radius:28px;margin:0 auto 18px;display:grid;place-items:center;background:conic-gradient(#ff2d72,#ff7a18,#f8e71c,#19d45b,#1587ff,#7b2cff,#ff2d72);box-shadow:0 18px 42px rgba(0,0,0,.28);position:relative;overflow:hidden}.logo:before{content:"";position:absolute;inset:22px;border-radius:50%;background:#111}.logo b{position:relative;z-index:1;font-size:42px;letter-spacing:-1px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.35)}h1{font-size:30px;line-height:1.2;margin:10px 0 8px}.ver{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.22);font-size:13px;margin:8px 0 18px}.msg{line-height:1.75;font-size:16px;color:rgba(255,255,255,.92);margin:0 0 18px}.btn{display:block;width:100%;border:0;border-radius:18px;background:#fff;color:#3a2417;font-weight:900;font-size:18px;padding:16px;margin-top:14px;text-decoration:none}.btn:active{transform:scale(.985)}.btn2{display:block;width:100%;border-radius:16px;background:rgba(255,255,255,.16);color:#fff;font-weight:800;font-size:14px;padding:12px;margin-top:10px;text-decoration:none;border:1px solid rgba(255,255,255,.22)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.box{border-radius:18px;background:rgba(255,255,255,.16);padding:13px 10px;font-size:13px}.box b{display:block;font-size:18px;margin-bottom:3px}.foot{font-size:12px;color:rgba(255,255,255,.75);margin-top:18px;line-height:1.6;text-align:left}.safe{color:#d7ffdf;font-weight:800}.status{font-size:13px;line-height:1.6;color:#e6ffeb;min-height:22px;margin:10px 0 0}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:manipulation}html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#111;color:#f6efe7}body{padding:env(safe-area-inset-top) 16px calc(84px + env(safe-area-inset-bottom));background:radial-gradient(circle at top,#3a2417 0,#15110f 46%,#050505 100%)}.topline{position:sticky;top:0;z-index:5;margin:0 -16px 18px;padding:10px 14px;text-align:center;font-size:12px;font-weight:800;letter-spacing:.04em;color:#f2c67d;background:rgba(5,5,5,.86);border-bottom:1px solid rgba(242,198,125,.35);backdrop-filter:blur(14px)}.wrap{max-width:480px;margin:0 auto}.hero{text-align:center;padding:26px 6px 12px}.mc{width:76px;height:76px;border-radius:24px;margin:0 auto 14px;display:grid;place-items:center;background:conic-gradient(#ff2d72,#ff7a18,#f8e71c,#19d45b,#1587ff,#7b2cff,#ff2d72);position:relative;box-shadow:0 16px 38px rgba(0,0,0,.35)}.mc:before{content:"";position:absolute;inset:15px;border-radius:50%;background:#111}.mc b{position:relative;font-size:26px;color:white;letter-spacing:-1px}h1{margin:0;font-size:30px;line-height:1.15}.sub{margin:10px auto 0;max-width:380px;line-height:1.55;color:#d8cbc0}.card{margin:14px 0;border:1px solid rgba(242,198,125,.42);background:rgba(255,255,255,.08);border-radius:22px;padding:16px;box-shadow:0 14px 34px rgba(0,0,0,.18)}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;border:1px solid rgba(122,232,144,.65);color:#9effb0;background:rgba(58,120,70,.12);padding:7px 10px;font-size:12px;font-weight:800;margin:4px}.pill.warn{border-color:rgba(242,198,125,.75);color:#f2c67d}.pill.red{border-color:rgba(255,110,110,.7);color:#ffb1b1}.title{font-weight:900;font-size:18px;margin:0 0 10px}.txt{line-height:1.65;color:#e4d7ca;font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.btn{display:block;width:100%;border:1px solid rgba(242,198,125,.55);background:rgba(242,198,125,.08);color:#ffd994;border-radius:16px;padding:14px 10px;font-weight:900;text-align:center;text-decoration:none}.btn:active{transform:scale(.985)}.list{display:grid;gap:9px}.row{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:11px 12px;background:rgba(255,255,255,.05);font-size:14px}.tag{border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;color:#8effa5;border:1px solid rgba(122,232,144,.65)}.tag.private{color:#ffb1b1;border-color:rgba(255,110,110,.7)}.tab{display:none}.tab.active{display:block}.nav{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(8,8,8,.92);border-top:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px);display:grid;grid-template-columns:repeat(5,1fr);padding:6px 8px calc(6px + env(safe-area-inset-bottom))}.nav button{appearance:none;border:0;background:transparent;color:#d9cbbd;font-size:11px;font-weight:800;padding:7px 2px;border-radius:12px}.nav button.active{color:#f7c66f;background:rgba(242,198,125,.12)}.ico{display:block;font-size:18px;margin-bottom:2px}.notice{color:#ffb1b1;border-top:2px solid rgba(255,110,110,.7);border-bottom:1px solid rgba(255,110,110,.25);padding:9px 10px;text-align:center;font-size:12px;font-weight:900;margin:0 -16px 10px;background:rgba(80,0,0,.18)}code{user-select:text;-webkit-user-select:text}.foot{font-size:12px;color:#b8aca0;line-height:1.55;margin-top:12px}
 </style>
 </head>
 <body>
-<main class="card">
-  <div class="logo"><b>MC</b></div>
-  <h1>美辰 Beauty AI</h1>
-  <div class="ver">WB17 Public Shell · 07</div>
-  <p class="msg">这是手机桌面公开入口壳。完整 WB17 私有核心、配方逻辑、色板规则、客户/会员/库存模块继续保存在私有仓库，不在公开页面暴露。</p>
-  <a class="btn" id="refreshBtn" href="./?v=wb17-public-shell-20260524-07-fallback">强制刷新公开入口</a>
-  <a class="btn2" id="hardBtn" href="./index.html?hard=1">备用硬刷新入口</a>
-  <div class="status" id="statusText">点主按钮后，如果没有看到提示变化，再点一次备用硬刷新入口。</div>
-  <div class="grid"><div class="box"><b>✓</b>桌面入口</div><div class="box"><b>✓</b>Logo 壳</div><div class="box"><b>🔒</b>核心私有</div><div class="box"><b>WB17</b>继续开发</div></div>
-  <div class="foot"><span class="safe">安全边界：</span>公开仓库只放入口、Logo、版本说明和非核心壳；完整系统继续在私有仓库开发。当前不走快捷指令，不要求重新添加桌面图标。</div>
+<div class="topline">PUBLIC SHELL PREVIEW — Private formula core not included</div>
+<div class="notice">⚠ Professional use only — strand test always required — formula output requires stylist confirmation</div>
+<main class="wrap">
+<section class="tab active" id="home">
+  <div class="hero"><div class="mc"><b>MC</b></div><h1>美辰 Beauty AI</h1><p class="sub">WB17.6 RC8a Safari / Home Screen 公开安全测试壳。用于 iPhone Safari 与添加到主屏幕预览；私有配方核心不在此包内。</p></div>
+  <div class="card"><div class="pill">Boot: OK</div><div class="pill">Nav: OK</div><div class="pill warn">Safari PWA: Ready</div><div class="pill red">Formula engine: Private core only</div><p class="txt">这个公开壳只验证图标、启动页、底部导航、合规入口和 AI Lab 架构展示。完整自动配方、色号库、库存、客户资料、案例库仍保留在私有核心包/私有仓库。</p></div>
+  <div class="card"><p class="title">Quick Navigation</p><div class="grid"><a class="btn" href="#" data-go="pwa">Safari PWA Guide</a><a class="btn" href="#" data-go="ai">AI Lab Preview</a><a class="btn" href="#" data-go="policy">Policy Pages</a><a class="btn" href="#" data-go="check">Review Checklist</a></div></div>
+</section>
+<section class="tab" id="pwa"><div class="card"><p class="title">Safari / 主屏幕测试步骤</p><div class="list"><div class="row"><span>1. 用 iPhone Safari 打开当前链接</span><span class="tag">Required</span></div><div class="row"><span>2. 点分享按钮</span><span class="tag">Required</span></div><div class="row"><span>3. 选择 Add to Home Screen / 添加到主屏幕</span><span class="tag">Required</span></div><div class="row"><span>4. 名称保留“美辰”或“Meichen”</span><span class="tag">OK</span></div><div class="row"><span>5. 从主屏幕图标打开，检查是否像 App 启动</span><span class="tag">Test</span></div></div><p class="foot">不要把私有核心上传到公开仓库。当前页面只是可公开展示的壳。</p></div></section>
+<section class="tab" id="ai"><div class="card"><p class="title">AI Lab Architecture Preview</p><div class="list"><div class="row"><span>Capture Layer</span><span class="tag">Label only</span></div><div class="row"><span>Image Preprocess Layer</span><span class="tag">Label only</span></div><div class="row"><span>Color Analysis Layer</span><span class="tag">Label only</span></div><div class="row"><span>Formula Rule Engine</span><span class="tag private">Private</span></div><div class="row"><span>Formula Database</span><span class="tag private">Private</span></div><div class="row"><span>Matching Engine</span><span class="tag private">Private</span></div><div class="row"><span>Output Layer</span><span class="tag">Shell</span></div><div class="row"><span>Feedback Calibration</span><span class="tag">Reserved</span></div><div class="row"><span>Deployment Modes</span><span class="tag">Preview</span></div><div class="row"><span>Compliance Layer</span><span class="tag">Included</span></div></div></div></section>
+<section class="tab" id="policy"><div class="card"><p class="title">Policy Pages</p><div class="list"><div class="row"><span>Privacy Policy placeholder</span><span class="tag">Included</span></div><div class="row"><span>User Agreement placeholder</span><span class="tag">Included</span></div><div class="row"><span>Permission Explanation</span><span class="tag">Included</span></div><div class="row"><span>Support / Complaint placeholder</span><span class="tag">Included</span></div></div><p class="txt">正式上架前必须替换为正式隐私政策、用户协议、客服/投诉信息和平台审核材料。</p></div></section>
+<section class="tab" id="check"><div class="card"><p class="title">What Is Included</p><div class="list"><div class="row"><span>Safari PWA guide</span><span class="tag">Included</span></div><div class="row"><span>AI Lab scaffold labels</span><span class="tag">Included</span></div><div class="row"><span>manifest.json + existing icon</span><span class="tag">Included</span></div></div></div><div class="card"><p class="title">What Is NOT Included</p><div class="list"><div class="row"><span>Formula engine</span><span class="tag private">Private core only</span></div><div class="row"><span>442 shades / 11 lines database</span><span class="tag private">Private core only</span></div><div class="row"><span>CASE-001 data</span><span class="tag private">Private core only</span></div><div class="row"><span>Inventory logic</span><span class="tag private">Private core only</span></div><div class="row"><span>Customer / member data</span><span class="tag private">Not public</span></div></div></div></section>
 </main>
+<nav class="nav"><button class="active" data-go="home"><span class="ico">⌂</span>Home</button><button data-go="pwa"><span class="ico">⊕</span>Safari</button><button data-go="ai"><span class="ico">◈</span>AI Lab</button><button data-go="policy"><span class="ico">⊙</span>Policy</button><button data-go="check"><span class="ico">✓</span>Check</button></nav>
 <script>
-var MEICHEN_VERSION='wb17-public-shell-20260524-07';
-function setStatus(text){var s=document.getElementById('statusText');if(s){s.textContent=text;}}
-function goHard(){window.location.href='./index.html?v='+MEICHEN_VERSION+'-'+Date.now();}
-async function meichenHardRefresh(){
-  setStatus('已点到按钮：正在清理缓存并刷新...');
-  try{if('serviceWorker' in navigator){var regs=await navigator.serviceWorker.getRegistrations();await Promise.all(regs.map(function(r){return r.unregister();}));}}catch(e){}
-  try{if(window.caches){var keys=await caches.keys();await Promise.all(keys.map(function(k){return caches.delete(k);}));}}catch(e){}
-  setStatus('清理完成，正在重新打开新版入口...');
-  setTimeout(goHard,300);
-}
 (function(){
-  var b=document.getElementById('refreshBtn');
-  if(b){b.onclick=function(e){e.preventDefault();meichenHardRefresh();return false;};b.ontouchend=function(e){e.preventDefault();meichenHardRefresh();return false;};}
-  var h=document.getElementById('hardBtn');
-  if(h){h.href='./index.html?v='+MEICHEN_VERSION+'-backup-'+Date.now();}
-  if('serviceWorker' in navigator){navigator.serviceWorker.register('./service-worker.js?v='+MEICHEN_VERSION).catch(function(){});}
+  var version='rc8a-shell-20260526';
+  function show(id){
+    document.querySelectorAll('.tab').forEach(function(el){el.classList.toggle('active',el.id===id);});
+    document.querySelectorAll('[data-go]').forEach(function(el){el.classList.toggle('active',el.getAttribute('data-go')===id);});
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.querySelectorAll('[data-go]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();show(el.getAttribute('data-go'));});});
+  if('serviceWorker' in navigator){navigator.serviceWorker.register('./service-worker.js?v='+version).catch(function(){});}
 })();
 </script>
 </body>
