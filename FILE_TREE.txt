@@ -1,0 +1,11 @@
+index.html
+manifest.json
+service-worker.js
+apple-touch-icon.png
+README.md
+QA_REPORT.md
+SELF_CHECK_RESULT.json
+CHANGELOG.md
+FILE_TREE.txt
+
+Note: public shell deployment intentionally references only assets confirmed present in this public repository. Private core remains excluded.
