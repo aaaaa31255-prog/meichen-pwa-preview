@@ -1,53 +1,47 @@
-# meichen-pwa-preview
+# Meichen WB17.6 RC8a — Safari Home Screen Test Shell
 
-Public preview build for **Meichen Beauty AI PWA**. Sanitized demo only.
+**Type:** PUBLIC SHELL — safe GitHub Pages preview  
+**Version:** WB17.6 RC8a Safari Home Screen Test Shell 20260526  
+**Scope:** iPhone Safari / Add to Home Screen preview only
 
-Live preview:
+## Security Boundary
 
-https://aaaaa31255-prog.github.io/meichen-pwa-preview/
+This public repository contains only a sanitized shell.
 
-## Purpose
+Not included:
 
-This repository is only for public GitHub Pages preview. It is separated from the private development repository.
+- private formula engine
+- complete shade database
+- CASE-001 internal data
+- customer/member data
+- inventory logic
+- consultation release-gate logic
+- private business rules
 
-Private main repository:
+The full Meichen core remains private.
 
-`aaaaa31255-prog/Repository-name-meichen-miniprogram`
+## Included
 
-## Public repository rules
+- `index.html` public shell UI
+- `manifest.json` for Home Screen preview
+- `service-worker.js` for shell-only caching
+- existing `apple-touch-icon.png`
+- public safety labels and policy/checklist placeholders
+- AI Lab architecture labels only
 
-Allowed files:
+## iPhone Safari Test
 
-- `index.html`
-- `privacy-preview.md`
-- `README.md`
-- `.nojekyll`
-- lightweight preview metadata files
+1. Open the GitHub Pages URL in iPhone Safari.
+2. Tap the share button.
+3. Choose **Add to Home Screen**.
+4. Name it `美辰` or `Meichen`.
+5. Open from the Home Screen icon.
+6. Confirm standalone launch, navigation, AI Lab preview, policy pages, and checklist.
 
-Not allowed:
+## Status
 
-- real customer data
-- phone numbers, membership balances, salon transaction records
-- API keys, tokens, passwords, `.env` files, secrets
-- private `project_hub` records
-- automation logs
-- original brand color-chart PDFs
-- original training videos
-- unlicensed images or copied source materials
-- full private business rules or production formula datasets
+- Public shell review: pass
+- Private core exposure: not found
+- App Store / Mini Program formal release: not applicable yet
 
-## Deployment
-
-GitHub Pages source:
-
-- Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/ (root)`
-- HTTPS: enforced
-
-## Current status
-
-- Public repository created
-- GitHub Pages enabled
-- Sanitized landing page deployed
-- Main repository remains private
+Formal release still requires a real App or Mini Program project, final privacy policy, final user agreement, permission prompts, data deletion workflow, support/contact channel, and platform-specific review materials.
